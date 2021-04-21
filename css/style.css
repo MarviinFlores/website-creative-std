@@ -1,4 +1,4 @@
-import url('https://fonts.googleapis.com/css2?family=Poppins:200;300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:200;300,400,500,600,700,800,900&display=swap');
 :root {
    --primary-color: #f60f20;
    --secondary-color: #1b206e;
@@ -170,7 +170,33 @@ transform:scale(0.98);
    height:110%;
 
   }
-@media(max-width:1068px) {
+
+  /*SERVICES*/
+  .services{ 
+	  margin-top: 40px;
+	  display:grid;
+	  grid-template-columns: repeat(3,1FR);
+	  gap: 40px;
+	  text-align:center;
+	  }
+	  .services .service {
+         padding :30px; 
+      }
+	  .services .service:hover {
+		  box-shadow:  0 10px  30px rgba(0,0,0,0.1);
+	  }
+	  .service .service h2{
+		  font-size:24px;
+		  font-weight: 500;
+		  margin-top:#1b206e;
+	  }
+	  .services .service .icon img{
+		  max-width: 100px;
+	  }
+
+
+@media(max-width:1080px) {     
+
 .home-img{
         display:none;
 }
@@ -182,7 +208,7 @@ left:40px;
 font-size:1.5rem;
 }
 section{
-padding:100[x 40px;
+padding:100px 40px;
 }
 .navigation ul li a{
 font-size:2rem;
